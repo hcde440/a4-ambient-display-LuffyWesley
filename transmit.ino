@@ -22,10 +22,9 @@ WiFiClient espClient;
 PubSubClient mqtt(espClient);  
 
 const char* city = "Bellevue"; // Change the name of the city to whatever you want
-
 char mac[6]; //A MAC address is a 'truly' unique ID for each device, lets use that as our 'truly' unique user ID!!!
-
 char message[201]; //201, as last character in the array is the NULL character, denoting the end of the array
+
 
 void setup() {
  
